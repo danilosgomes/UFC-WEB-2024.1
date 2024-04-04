@@ -1,4 +1,5 @@
 import { createContext } from "react";
 const Number = createContext(10);
+const Button = createContext()
 
-export default Number;
+export { Number, Button };

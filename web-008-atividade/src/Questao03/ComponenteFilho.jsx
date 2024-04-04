@@ -1,6 +1,6 @@
 import { useContext } from "react"
-import Number from "./MyContext"
-import ComponenteNeto from "./ComponenteNeto"
+import { Number } from "./MyContext"
+import ComponenteNeto2 from "./ComponenteNeto"
 
 const ComponenteFilho2 = ({url}) => {
 
@@ -16,7 +16,7 @@ const ComponenteFilho2 = ({url}) => {
                 border= "2px" solid black
             />
 <br />
-            <ComponenteNeto url={url}/>
+            <ComponenteNeto2 url={url}/>
         </div>
     )
 }
