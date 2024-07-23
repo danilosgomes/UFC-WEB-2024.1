@@ -1,65 +1,57 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+header {
+      background: rgb(65, 65, 65);
+      text-align: center;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
 section {
     display: flex;
     background-color: rgb(194, 194, 194);
+    flex-direction: row;
+    flex-flow: wrap;
+
 }
 
-body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-
-header {
-    background: rgb(65, 65, 65);
-    height: 100px;
-  }
-
-h1 {
-    text-align: center;
-    color: white;
-    line-height: 100px;
-    margin: 0;
-  }
-
 article {
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
-    border: 1px solid rgb(29, 29, 29);
-    background: aqua;
+    border: 1px solid #03709b;
+    background: #9fccf1;
     border-radius: 8px;
+    flex: 2
   }
 
 article:nth-of-type(3) {
-    flex: 3 200px;
+    flex: 3;
     display: flex;
+    flex-direction: row;
     flex-flow: column;
 }
 
-article:nth-of-type(3) div:first-child {
-    flex: 1 100px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.container {
+.cont1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-button {
-    flex: 1;
-    margin: 2px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-
-button:nth-of-type(5){
-    flex: 3 200px;
+.cont2{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+button {
+    flex: 1;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 2;
+    border-radius: 8px;
 }

@@ -1,0 +1,39 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0%;
+}
+
+header {
+  color: #fff;
+  background-color: #8a24b3;
+  text-align: center;
+  padding: 10px;
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Atalho para colocar o direction e o wrap em uma só linha */
+  /* flex-flow: row wrap; */
+}
+
+article {
+  background-color: #80f3f3;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 6px;
+  flex: 1
+}
+
+article:nth-of-type(2) {
+  /* odd = impar ; even = par  */
+  flex: 2
+}
+
+article:nth-of-type(3) {
+  /* odd = impar ; even = par  */
+  flex: 3
+}
